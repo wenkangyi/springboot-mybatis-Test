@@ -6,10 +6,7 @@ import com.example.mydemo.service.impl.AreaServiceImpl;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,6 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+@CrossOrigin(origins="http://localhost:8080",maxAge = 3600)/*此注解需要添加在web接口文件中，不能添加到Application文件中*/
 @RequestMapping("/superadmin")
 public class AreaController {
     @Autowired
