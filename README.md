@@ -5,5 +5,5 @@
 
 vue2-axios-test连接为：https://github.com/wenkangyi/vue2-axios-test.git
 
-如有不明可加我微信：wkyzlc8888
+如有不明可加我微信：wkyzlc8888(wechat)
 
